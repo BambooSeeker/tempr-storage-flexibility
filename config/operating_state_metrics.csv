@@ -1,0 +1,28 @@
+condition,tertile,n_days,model,mae
+Demand,T1,27,LightGBM,25.88619636180556
+Demand,T1,27,Chronos2 + target-day variables,20.678226273148148
+Demand,T1,27,LoRA-Chronos2,19.795399691358025
+Demand,T2,26,LightGBM,21.385867532051286
+Demand,T2,26,Chronos2 + target-day variables,18.178042467948714
+Demand,T2,26,LoRA-Chronos2,18.163217147435898
+Demand,T3,27,LightGBM,17.921560625
+Demand,T3,27,Chronos2 + target-day variables,11.000189814814814
+Demand,T3,27,LoRA-Chronos2,10.172655864197532
+Renewable penetration,T1,27,LightGBM,19.36417726080247
+Renewable penetration,T1,27,Chronos2 + target-day variables,14.253761574074074
+Renewable penetration,T1,27,LoRA-Chronos2,13.839207561728395
+Renewable penetration,T2,26,LightGBM,19.263929615384615
+Renewable penetration,T2,26,Chronos2 + target-day variables,13.887129006410255
+Renewable penetration,T2,26,LoRA-Chronos2,13.436665865384615
+Renewable penetration,T3,27,LightGBM,26.486927349459872
+Renewable penetration,T3,27,Chronos2 + target-day variables,21.55664525462963
+Renewable penetration,T3,27,LoRA-Chronos2,20.680341820987657
+Residual bidding space,T1,27,LightGBM,24.61214420131173
+Residual bidding space,T1,27,Chronos2 + target-day variables,18.840126736111113
+Residual bidding space,T1,27,LoRA-Chronos2,18.17438811728395
+Residual bidding space,T2,26,LightGBM,19.54560787660256
+Residual bidding space,T2,26,Chronos2 + target-day variables,17.472759615384614
+Residual bidding space,T2,26,LoRA-Chronos2,16.79544230769231
+Residual bidding space,T3,27,LightGBM,20.967714675925922
+Residual bidding space,T3,27,Chronos2 + target-day variables,13.517450617283952
+Residual bidding space,T3,27,LoRA-Chronos2,13.110783950617284

@@ -1,0 +1,89 @@
+{
+  "date": "2026-10-06",
+  "experiment": "E04",
+  "forecast_sha256": "f57d9115b44355d23fa9d78d784b8eae0223f26d115ffde8ce1f84f5fedf4989",
+  "budget_multiples": [
+    1,
+    2,
+    4,
+    8
+  ],
+  "beta": 0.5,
+  "choice_score": "Ghat-max(0,Lhat)",
+  "tie_tolerance": 1e-06,
+  "tie_break": "smallest_k",
+  "positive_threshold": 1e-06,
+  "fixed_control_k": 2,
+  "data_status": "80 days previously explored",
+  "new_features": [],
+  "reference": {
+    "run": "E2 restricted pilot, not final main study",
+    "network": "urban",
+    "days": 80,
+    "battery_buses": [
+      124,
+      132
+    ],
+    "P_each_MW": 2.0755303392999997,
+    "E_each_MWh": 8.302121357199999,
+    "call_slots": [
+      24,
+      87
+    ],
+    "recovery_slots": [
+      88,
+      95
+    ],
+    "budget_hours": 1.0,
+    "initial_r_each_MW": 1.0377651696499999,
+    "r_grid_fractions": [
+      1,
+      0.8,
+      0.6,
+      0.4,
+      0.2,
+      0
+    ],
+    "import_cap_MW": 17.81312289457817,
+    "cap_status": "constructed contractual import-cap pressure scenario; not original transformer rating",
+    "loss_margin_MW": 0.0703205858781703,
+    "uncertainty_scenarios": 21,
+    "calibration_residual_ids": [
+      16,
+      47,
+      19,
+      29,
+      42,
+      30,
+      2,
+      38,
+      28,
+      18,
+      0,
+      39,
+      6,
+      25,
+      40,
+      41,
+      23,
+      34,
+      20,
+      37
+    ],
+    "forecast_rule": "frozen training same weekday + calibration residual daily blocks",
+    "prediction_sha256": "f57d9115b44355d23fa9d78d784b8eae0223f26d115ffde8ce1f84f5fedf4989",
+    "restrictions": [
+      "baseline may charge/discharge in every slot; 48 binary modes enforce mutual exclusion; conservative invocation SOC certificate",
+      "two independent budgets, symmetric one-half causal allocation",
+      "no new call during recovery; exact piecewise-efficiency recovery with current PCC constraints",
+      "PCC-only planner; full internal network not constrained in optimizer",
+      "B4 centralized strong baseline remains unimplemented; no novelty or superiority claim"
+    ],
+    "additional_domain": "pointwise upper net-demand envelope of first 260 observed network days; only historical bound, not future guarantee",
+    "cap_rule": "first260 net-demand max - single battery power + calibration AC loss allowance; chosen for equipment-scale-compatible stress, not measured grid cap",
+    "daily_SOC_anchor": true,
+    "flexible_market": true
+  },
+  "master_word_sha256": "ccb698e69d75f232a264124c8edd8726fe7e23acd3cfbd2447858705660b0a01",
+  "version": "1.1"
+}

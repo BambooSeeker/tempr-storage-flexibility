@@ -1,0 +1,29 @@
+{
+  "features": [
+    "demand",
+    "supply",
+    "bidding_space",
+    "renewable_penetration",
+    "coal_gas_nuclear_pred",
+    "photo_gene_total_pred",
+    "wind_gene_total_pred"
+  ],
+  "context_length": 1024,
+  "horizon": 48,
+  "days": 14,
+  "base_model": "amazon/chronos-2",
+  "base_revision": "29ec3766d36d6f73f0696f85560a422f50e8498c",
+  "training_base_precision": "bfloat16-rounded weights promoted to float32 by Chronos2Pipeline.fit",
+  "adapter_sha256": "f601cb86766b5eedb620b637fa4f2bef1b1948afd90ef70cbfcd34a6deb6a70f",
+  "figures": {
+    "Fig2": {
+      "start": "2026-01-12 00:00:00",
+      "days": 7
+    },
+    "Fig3": {
+      "start": "2026-01-05 00:00:00",
+      "days": 7
+    }
+  },
+  "comparison_provenance": "Only LoRA is computed live. Other curves are the published predictions for these 14 days. No saved LoRA output is included in data/figures."
+}

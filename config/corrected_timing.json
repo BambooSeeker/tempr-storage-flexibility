@@ -1,0 +1,14 @@
+{
+  "device": "CPU",
+  "processor": "AMD Ryzen 9 9955HX",
+  "torch_threads": 4,
+  "LightGBM_n_jobs": -1,
+  "seconds": {
+    "LightGBM": 377.060049533844,
+    "LSTM (residual)": 29.243568897247314,
+    "PatchTST (residual)": 51.32241177558899,
+    "SVR": 7.930229663848877,
+    "Transformer (residual)": 98.61494731903076
+  },
+  "measurement": "Model fit/train call only; excludes preprocessing and prediction."
+}

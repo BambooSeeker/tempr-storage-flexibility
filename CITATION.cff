@@ -1,0 +1,19 @@
+cff-version: 1.2.0
+message: "Please cite this software and its accompanying manuscript."
+title: "Storage Flexibility Allocation for Energy Trading and Network Services With Time-Series Foundation Models: Research Code"
+type: software
+version: 1.2.0
+authors:
+  - family-names: Hou
+    given-names: Peng
+  - family-names: Zhu
+    given-names: Jiawei
+  - family-names: Liu
+    given-names: Zeyu
+  - family-names: Hou
+    given-names: Kai
+license: MIT
+abstract: "Price forecasting, service-specific storage activation-energy allocation, causal execution and settlement."
+repository-code: "https://github.com/BambooSeeker/tempr-storage-flexibility"
+url: "https://github.com/BambooSeeker/tempr-storage-flexibility/releases/tag/v1.2.0"
+date-released: 2026-10-15

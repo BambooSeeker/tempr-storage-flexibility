@@ -1,0 +1,32 @@
+{
+  "filename_pattern": "input_price_predict_YYYYMM.csv",
+  "columns": [
+    "time",
+    "code",
+    "price_day_ahead",
+    "machine_state",
+    "price_day_ahead_energy",
+    "price_day_ahead_cong",
+    "price_real",
+    "price_real_cong",
+    "load_day_ahead_pred",
+    "elec_exter_plan",
+    "elec_fix_out_plan",
+    "energy_hydro_renewable",
+    "elec_gene_total_pred",
+    "photo_gene_total_pred",
+    "wind_gene_total_pred",
+    "water_gene_total_pred",
+    "elec_gene_real_all",
+    "photo_gene_total_real",
+    "elec_gene_real_wind",
+    "elec_gene_real_water",
+    "load_real",
+    "elec_day_ahead_all",
+    "price_day_ahead_load",
+    "price_real_energy",
+    "elec_real_all",
+    "price_real_load"
+  ],
+  "note": "Column schema only; obtain full observations under provider authorization."
+}

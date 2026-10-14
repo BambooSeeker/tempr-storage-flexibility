@@ -1,0 +1,263 @@
+[
+  [
+    [
+      "Parameter",
+      "Value"
+    ],
+    [
+      "Storage locations",
+      "Buses 124 and 132"
+    ],
+    [
+      "Power / energy per battery",
+      "2.0755 MW / 8.3021 MWh"
+    ],
+    [
+      "Charging / discharging efficiency",
+      "√0.85 / √0.85"
+    ],
+    [
+      "SOC range / baseline endpoints",
+      "10–90% / 50%"
+    ],
+    [
+      "Degradation cost",
+      "20 CNY/MWh"
+    ],
+    [
+      "Reserved power / initial budget",
+      "1.0378 MW / 1.0378 MWh per battery"
+    ],
+    [
+      "Activation / recovery windows",
+      "06:00–22:00 / 22:00–24:00"
+    ],
+    [
+      "Main PCC import limit",
+      "17.8131 MW"
+    ]
+  ],
+  [
+    [
+      "Model",
+      "MAE (CNY/MWh)",
+      "RMSE (CNY/MWh)",
+      "MAPE (%)"
+    ],
+    [
+      "Chronos-2 + inputs + LoRA",
+      "16.02",
+      "40.18",
+      "6.97"
+    ],
+    [
+      "Chronos-2 + operating inputs",
+      "16.60",
+      "41.83",
+      "7.21"
+    ],
+    [
+      "Chronos-Bolt-small",
+      "20.19",
+      "51.06",
+      "9.02"
+    ],
+    [
+      "Chronos-2 (price only)",
+      "20.38",
+      "52.00",
+      "9.06"
+    ],
+    [
+      "LightGBM",
+      "21.74",
+      "38.78",
+      "7.50"
+    ],
+    [
+      "SVR",
+      "21.84",
+      "51.36",
+      "9.57"
+    ],
+    [
+      "ARIMA",
+      "22.14",
+      "51.62",
+      "9.69"
+    ],
+    [
+      "Transformer (residual)",
+      "22.59",
+      "46.38",
+      "8.58"
+    ],
+    [
+      "Prophet",
+      "23.32",
+      "50.08",
+      "9.84"
+    ],
+    [
+      "LSTM (residual)",
+      "23.51",
+      "49.08",
+      "9.21"
+    ],
+    [
+      "Previous day",
+      "23.61",
+      "59.91",
+      "10.22"
+    ],
+    [
+      "PatchTST (residual)",
+      "25.06",
+      "51.20",
+      "9.65"
+    ]
+  ],
+  [
+    [
+      "Model",
+      "Procedure",
+      "Time (s)"
+    ],
+    [
+      "SVR",
+      "Fitting",
+      "7.93"
+    ],
+    [
+      "LSTM (residual)",
+      "Training",
+      "29.24"
+    ],
+    [
+      "Prophet",
+      "Rolling fit + forecast",
+      "9.33"
+    ],
+    [
+      "Transformer (residual)",
+      "Training",
+      "98.61"
+    ],
+    [
+      "PatchTST (residual)",
+      "Training",
+      "51.32"
+    ],
+    [
+      "ARIMA",
+      "Rolling fit + forecast",
+      "76.15"
+    ],
+    [
+      "Chronos-2 + LoRA",
+      "Adaptation",
+      "78.81"
+    ],
+    [
+      "LightGBM",
+      "Fitting",
+      "377.06"
+    ]
+  ],
+  [
+    [
+      "γ",
+      "PCC cap (MW)",
+      "Reference days",
+      "Selected days"
+    ],
+    [
+      "0",
+      "19.8887",
+      "80",
+      "80"
+    ],
+    [
+      "0.5",
+      "18.8509",
+      "80",
+      "80"
+    ],
+    [
+      "1.0",
+      "17.8131",
+      "80",
+      "80"
+    ],
+    [
+      "1.5",
+      "16.7754",
+      "79",
+      "78"
+    ]
+  ],
+  [
+    [
+      "Arrangement",
+      "Storage gain",
+      "Grid gain",
+      "Joint gain"
+    ],
+    [
+      "Fixed rights",
+      "0.00",
+      "0.00",
+      "0.00"
+    ],
+    [
+      "Fixed 2B₀",
+      "992.62",
+      "844.16",
+      "1836.78"
+    ],
+    [
+      "Fixed 8B₀",
+      "1347.43",
+      "1123.32",
+      "2470.75"
+    ],
+    [
+      "Selected budget",
+      "1349.90",
+      "1125.35",
+      "2475.26"
+    ]
+  ],
+  [
+    [
+      "Interval",
+      "Price (CNY/MWh)",
+      "Reference q (MW)",
+      "Selected q (MW)"
+    ],
+    [
+      "00:30–01:00",
+      "320.000",
+      "0.0000",
+      "1.9723"
+    ],
+    [
+      "06:30–07:00",
+      "330.000",
+      "1.0378",
+      "2.0755"
+    ],
+    [
+      "14:30–15:00",
+      "−200.000",
+      "−0.3192",
+      "−1.3569"
+    ],
+    [
+      "20:00–20:30",
+      "296.184",
+      "0.0000",
+      "1.9723"
+    ]
+  ]
+]
